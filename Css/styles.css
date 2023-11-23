@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Nosifer&family=Roboto:wght@400;900&display=swap');
+
+/* ------------------------------ */
+/* Body común a todas las paginas */
+/* ------------------------------ */
+body{
+    background-image: url(../img/binding_dark.png);
+    width: auto;
+    max-width: 1500px;
+    margin: 0 auto; /* Centra el body horizontalmente */
+}
+
+/* -------------------------------- */
+/* Header común a todas las paginas */
+/* -------------------------------- */
+#header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+position: fixed;
+    padding: 10px;
+    width: 100%;
+    gap: 5px;
+    height: auto;
+    overflow: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+#header .logo{
+    padding: 10px;
+    width: 200px;
+}
+/* LIMPIAR DESDE ACA */
+
+/* #header .menu{
+    padding: 10px;
+    width: 800px;
+    flex-grow: 1;
+}
+
+ #header .menu ul{
+    display: flex;
+    padding: 5px;
+    list-style: none;
+    gap: 20px;
+    justify-content:flex-end;
+    align-content:space-around ;
+    width: 800px; 
+    margin: 0 auto;
+}
+
+#header .menu ul li a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;   
+}  */
+
+/* HASTA ACA */
+
+
+/* #header .navbar{
+    background-color: green;
+} */
+
+
+/* --------------------- */
+/* Header NavBar contorno fondo collapse */
+/* --------------------- */
+#header .collapse.navbar-collapse.__test{
+    background-color: black;
+}
+
+/* --------------------- */
+/* Header NavBar contorno fondo Toogle2 */
+/* --------------------- */
+#header .container-fluid.__fondoToogler2{
+    background-color: black;
+}
+
+
+/* --------------------- */
+/* Header NavBar contorno fondo Icon */
+/* --------------------- */
+ #header .container-fluid .navbar-toggler.__color{
+    background-color: red;
+    border: none;
+    gap: 5px;
+} 
+
+/* --------------------- */
+/* Header NavBar Fondo Color Icon */
+/* --------------------- */
+#header .container-fluid .navbar-toggler.__color .navbar-toggler-icon{
+    background-color:red;
+}
+
+/* --------------------- */
+/* Header NavBar contorno fondo botones */
+/* --------------------- */
+#header .collapse.navbar-collapse .navbar-nav.me-auto.mb-2.mb-lg-0.__flexContainer{
+    display: flex;
+    padding-top: 10px;
+    list-style: none;
+    gap: 10px;
+    justify-content:flex-end;
+    align-content:space-around ;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+
+/* --------------------- */
+/* Header NavBar botones */
+/* --------------------- */
+#header .collapse.navbar-collapse .navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item.__navButton{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: red;
+/*     color: white;
+ */ padding: 3px 3px;
+    border-radius: 5px;
+}
+
+#header .collapse.navbar-collapse .navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item.__navButton:hover{
+    background-color: black;
+}
+
+
+/* --------------------------------- */
+/* Main comun para todas las paginas */
+/* --------------------------------- */
+.main {
+    padding-top: 10px; 
+    padding-left: 5px;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 10px auto;
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+/* ----------------------------- */
+/* Tilulo para todas las paginas */
+/* ----------------------------- */
+.main h1{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h3{
+    color: white;
+}
+
+
+/* -------------------------- */
+/*Main Index contenedor banda */
+/* -------------------------- */
+.main .containerBanda {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+/*     padding-top: 10px;
+    padding-left: 5px; */
+    padding: 5px 5px 5px;
+}
+
+.main .containerBanda .integrante {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    background-color: #1b1b1b;
+    padding: 10px;
+    gap: 3px;
+    font-size:small;
+}
+
+.main .containerBanda h3,
+.main .containerBanda h4 {
+    margin: 0;
+}
+
+.main .containerBanda p {
+    margin: 10px 0;
+}
+
+.main .containerBanda .imgIntegrantes {
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------------------- */
+/* Main index ultimo Single */
+/* ----------------------------- */
+.main .ultimoSingle{
+    padding-top: 50px;
+    width: 100%;
+}
+
+/* ----------------------------------- */
+/*Main Index contenedor seccion fechas */
+/* ----------------------------------- */
+.main .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    gap: 10px 10px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+.main .grid-container .grid-item-text {
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex;
+    align-items: center; /* Centra verticalmente dentro del contenedor */
+    padding: 20px;
+    border-left: 1px solid white;
+}
+
+
+.main .grid-container .grid-item-image img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción original */
+    max-width: 300px;
+}
+
+
+.main .grid-container .grid-item-image{
+    padding-left: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.main .grid-container .grid-item-fechas {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.main .grid-container .grid-item-image,
+.main .grid-container .grid-item-text {
+    transition: transform 0.5s ease;
+    width: 100%;
+    max-width: 100%; /* Ancho máximo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción original */
+}
+
+.main .grid-container .grid-item-image.active,
+.main .grid-container .grid-item-text.active {
+    transform: translateX(0%);
+}
+
+.main .grid-container .grid-item-image.next,
+.main .grid-container .grid-item-text.next {
+    transform: translateX(100%);
+}
+
+.main .grid-container .grid-item-image.prev,
+.main .grid-container .grid-item-text.prev {
+    transform: translateX(-100%);
+}
+
+
+.main #spotify{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+    max-width: 1100px;
+    height: auto;
+    gap: 10px;
+}
+
+.main .parrafo{
+    border:1px solid white;
+    color: white;
+}
+
+.main .discografia li{
+    color: white;
+}
+
+.main .frmContacto{
+    color: white;
+}
+.main .frmContacto #btnEnviar,#btnBorrarTodo{
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+    padding: 5px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 10px auto;
+    color: white;
+}
+
+.footer .redes{
+    display: flex;
+    gap: 10px;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.videoSlide {
+    width: 100%;
+    max-width: 560px;
+    overflow: hidden;
+}
+
+
+.botonCarruselSiguiente,.botonCarruselAnterior{
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 560px;
+}
+
+.botonCarruselAnterior:hover,.botonCarruselSiguiente:hover{
+    background-color: black;
+}
+
+
+.botonVolver {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.botonVolver:hover{
+    background-color: black;
+}
+
+
+#fotos .galeria {
+    width: 91%;
+    margin: 0 3%;
+    height: 500px;
+    background-color: #000;
+    margin-top: 50px;
+    overflow: auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+/* ------------------------------------- */

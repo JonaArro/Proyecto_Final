@@ -208,12 +208,27 @@ h3{
     height: auto;
 }
 
+/* ----------------------------------- */
+/*Main Index seccion iframeTouTube */
+/* ----------------------------------- */
+.main #iframeTouTube{
+    padding-bottom: 30px;
+}
+
 /* ----------------------------- */
 /* Main index ultimo Single */
 /* ----------------------------- */
 .main .ultimoSingle{
-    padding-top: 50px;
+    padding-top: 30px;
     width: 100%;
+}
+
+/* ----------------------------------- */
+/*Main Index seccion fechas */
+/* ----------------------------------- */
+.main #fechas{
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 /* ----------------------------------- */
@@ -228,6 +243,7 @@ h3{
     background-color: black;
     color: white;
     overflow: hidden;
+    height: 450px;
 }
 
 
@@ -244,13 +260,16 @@ h3{
     width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     height: auto; /* Altura automática para mantener la proporción original */
     max-width: 300px;
+    align-items: center; 
+    justify-content: center;
 }
 
 
 .main .grid-container .grid-item-image{
     padding-left: 20px;
-    justify-items: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -284,7 +303,7 @@ h3{
 }
 
 
-.main #spotify{
+/* .main #spotify{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -294,7 +313,7 @@ h3{
     max-width: 1100px;
     height: auto;
     gap: 10px;
-}
+} */
 
 .main .parrafo{
     border:1px solid white;
@@ -317,19 +336,21 @@ h3{
 .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 50px;
+    justify-content: space-between; 
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 100%;
     max-width: 1100px;
     height: auto;
-    margin: 10px auto;
+    margin: 10px auto; 
     color: white;
 }
 
-.footer .redes{
+ .footer .redes{
     display: flex;
     gap: 10px;
-}
+}  
 
 .videoContainer {
     display: flex;

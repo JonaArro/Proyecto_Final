@@ -64,7 +64,50 @@
         </nav> -->
     </header>
     <main class="main">
-        <h1>Integrantes</h1>
+        <h1 class="integrantesTitle">Integrantes</h1>
+
+        <div class="dropdown-container">
+            <label for="integrantesDropdown" class="dropdownLabel">Seleccionar Integrante</label>
+            <select id="integrantesDropdown" class="integrantesDropdown">
+                <option value="ricardo">Ricardo Mollo</option>
+                <option value="diego">Diego Arnedo</option>
+                <option value="catriel">Catriel Civarella</option>
+            </select>
+        </div>
+        
+        <section class="containerBanda">
+            <div id="ricardo" class="integrante">
+                <h3>Ricardo Mollo</h3>
+                <div class="details">
+                    <h4>Cantante-Guitarrista</h4>
+                    <p>Ricardo Mollo, nacido en 1955 en Buenos Aires, Argentina...</p>
+                    <img class="imgIntegrantes" src="./img/Ricardo_Mollo01.jpg" alt="ricardo_mollo">
+                </div>
+            </div>
+
+            <div id="diego" class="integrante">
+                <h3>Diego Arnedo</h3>
+                <div class="details">
+                    <h4>Bajista</h4>
+                <p>Diego Arnedo, nacido en 1958 en Buenos Aires, Ar....</p>
+                <img class="imgIntegrantes" src="./img/diego_arnedo.jpg" alt="diego_arnedo">
+                </div>
+            </div>
+
+            <div id="catriel" class="integrante">
+                <h3>Catriel Civarella</h3>
+                <div class="details">
+                    <h4>Baterista</h4>
+                <p>Catriel Ciavarella, nacido el 1 de septiembre de 1979, es un destacado baterista argentino de rock, con...</p>
+                <img class="imgIntegrantes" src="./img/catriel_ciavarella.jpg" alt="catriel_ciavarella">
+                </div>
+            </div>
+
+            <script src="./script/toggleList.js"></script>
+
+        </section>
+
+<!--         <h1>Integrantes</h1>
         <section class="containerBanda">
             <div class="integrante">
                 <h3>Ricardo Mollo</h3>
@@ -86,11 +129,11 @@
                 <p>Catriel Ciavarella, nacido el 1 de septiembre de 1979, es un destacado baterista argentino de rock, conocido por su actual participación en la influyente banda Divididos. Su carrera musical despegó a los 14 años cuando Ricardo Mollo intentó incorporarlo a Divididos, aunque fue en 2004 cuando finalmente se unió de manera definitiva. Antes, integró MAM y participó en proyectos como Nuca y la banda de Alejandro Sokol. Ciavarella ha dejado su huella en la escena musical argentina, destacándose en la grabación de álbumes como "Amapola del 66" y "Haciendo Cosas Raras". Actualmente, continúa siendo pieza fundamental en la gira 2021-2023 de Divididos, participando en eventos conmemorativos y explorando nuevos proyectos como productor artístico</p>
                 <img class="imgIntegrantes" src="./img/catriel_ciavarella.jpg" alt="catriel_ciavarella">
             </div>
-        </section>
+ -->
 
 
         <section id="iframeYouTube"> 
-            <div class="container-fluid">
+            <div class="container">
                 <iframe class="ultimoSingle"   width="900" height="600" src="https://www.youtube.com/embed/TF205_8t5Hc" title="Divididos | San Saltarín (Video Oficial)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                 </iframe> 
             </div>

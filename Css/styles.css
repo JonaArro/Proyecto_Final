@@ -42,6 +42,34 @@ body{
     width: 200px;
 }
 
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Footer comun a todas las paginas  */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    margin: 10px auto; 
+    color: white;
+}
+
+ .footer .redes{
+    display: flex;
+    gap: 10px;
+}  
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
 /* --------------------- */
 /* Header NavBar contorno fondo collapse */
 /* --------------------- */
@@ -136,9 +164,9 @@ h3{
 }
 
 
-/* -------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------- */
 /*Main Index contenedor banda */
-/* -------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------- */
 .main .containerBanda {
     background-color: black;
     color: white;
@@ -193,6 +221,7 @@ h3{
         border: 1px solid white;
         width: auto; 
         padding: 2px; 
+        margin-bottom: 3px;
     }
 
     .main .integrantesDropdown:focus {
@@ -200,9 +229,9 @@ h3{
     }
 
 /* Revierte el tamaño de la fuente después de perder el foco */
-    .main .integrantesDropdown:blur {
+/*     .main .integrantesDropdown:blur {
         font-size: 25px; 
-    }
+    } */
 
 }
 
@@ -214,25 +243,7 @@ h3{
         display: grid; /* Muestra el integrante seleccionado */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ----------------------------------------------------------------------------------------------------------------------- */
 
 
 /* ----------------------------------- */
@@ -329,18 +340,8 @@ h3{
     transform: translateX(-100%);
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------- */
 
-/* .main #spotify{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: auto;
-    max-width: 1100px;
-    height: auto;
-    gap: 10px;
-} */
 
 .main .parrafo{
     border:1px solid white;
@@ -360,29 +361,12 @@ h3{
     background-color: red;
     padding: 5px;
 }
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    padding-top: 40px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 100%;
-    max-width: 1100px;
-    height: auto;
-    margin: 10px auto; 
-    color: white;
-}
 
- .footer .redes{
-    display: flex;
-    gap: 10px;
-}  
+
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* Main page Video  */
 /* ----------------------------------------------------------------------------------------------------------------------- */
-
 
 .main .pageVideos .videoContainer {
     display: grid;
@@ -403,11 +387,9 @@ h3{
 
  .videoSlide iframe{
     width: 100%;
-
-/*     height: 100%; */
  }
 
-
+/*------ Botones Siguiente - Anterior------ */
 .botonCarruselSiguiente,.botonCarruselAnterior{
     background-color: red;
     color: #fff;
@@ -427,6 +409,8 @@ h3{
 }
 
 
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
 .botonVolver {
     background-color: red;
     color: white;
@@ -442,15 +426,43 @@ h3{
 }
 
 
-#fotos .galeria {
+/* .main .container.galeria {
     width: 91%;
     margin: 0 3%;
     height: 500px;
     background-color: #000;
-    margin-top: 50px;
     overflow: auto;
     padding: 2%;
     border-radius: 5px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-items: center;
+} */
+
+.gridGallery{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 30px;
 }
+
+.main .gridGallery img{
+width: 100%;
+height: auto;
+}
+
+.main .gridGallery img:hover{
+    filter: none;
+    transform: scale(1.25);
+    }
+ 
+@media (max-width: 625px){
+    .gridGallery{
+    grid-template-columns: 1fr 1fr;
+}
+}   
 
 /* ------------------------------------- */

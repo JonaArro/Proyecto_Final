@@ -37,4 +37,4 @@ nextButton.classList.add('botonCarruselSiguiente');
 nextButton.addEventListener('click', nextVideo);
 
 videoContainer.appendChild(prevButton);
-videoContainer.appendChild(nextButton);
+videoContainer.appendChild(nextButton); 

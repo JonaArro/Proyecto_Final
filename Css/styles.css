@@ -171,12 +171,7 @@ h3{
     height: auto;
 }
 
-
-
-/* test media queery banda */
-/* Estilos generales ... */
-
-/* Estilos para pantallas con ancho de 200px o menos */
+/* Estilado responsive para los integrantes cuando el ancho de la pantalla es menor a 625px */
 
 @media (max-width: 625px) {
     .main .containerBanda .integrante {
@@ -186,17 +181,37 @@ h3{
     .main .containerBanda .integrante.active {
         display: grid; /* Muestra el integrante seleccionado */
     }
+    .main .containerBanda .integrante h3 {
+        display: none; /* Oculta el h3 específico en pantallas pequeñas */
+    }
 
+    .main .integrantesDropdown {
+        font-family: sans-serif; 
+        font-size: 20px;
+        color: white;
+        background-color: #1b1b1b; 
+        border: 1px solid white;
+        width: auto; 
+        padding: 2px; 
+    }
 
-.main h1{
-background-color: violet;
+    .main .integrantesDropdown:focus {
+        font-size: 20px; 
+    }
 
-}
+/* Revierte el tamaño de la fuente después de perder el foco */
+    .main .integrantesDropdown:blur {
+        font-size: 25px; 
+    }
+
 }
 
 @media (min-width: 625px) {
     .main .dropdown-container {
         display: none; /* Muestra el dropdown */
+    }
+    .main .containerBanda .integrante.active {
+        display: grid; /* Muestra el integrante seleccionado */
     }
 }
 

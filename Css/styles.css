@@ -159,7 +159,7 @@ body{
     padding-top: 20px;
 }
 
-h3{
+.main h3, .main h2{
     color: white;
 }
 
@@ -342,11 +342,35 @@ h3{
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
 
+.main .informacionPpal {
+    margin-bottom: 50px;
+}
 
 .main .parrafo{
-    border:1px solid white;
+    border:1px solid red;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.main .informacionH3{
+    text-align: left;
+    margin-bottom: 30px;
     color: white;
 }
+
+.main .informacionH4{
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.main .max-width-300 {
+    max-width: 300px;
+    height: auto;
+}
+
 
 .main .discografia li{
     color: white;
@@ -411,6 +435,11 @@ h3{
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
 
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Boton volver comun a todas las pag  */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
 .botonVolver {
     background-color: red;
     color: white;
@@ -424,20 +453,14 @@ h3{
 .botonVolver:hover{
     background-color: black;
 }
+/* ----------------------------------------------------------------------------------------------------------------------- */
 
 
-/* .main .container.galeria {
-    width: 91%;
-    margin: 0 3%;
-    height: 500px;
-    background-color: #000;
-    overflow: auto;
-    padding: 2%;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    align-items: center;
-    justify-items: center;
-} */
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Main page Fotos  */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
 
 .gridGallery{
     display: grid;
@@ -465,4 +488,4 @@ height: auto;
 }
 }   
 
-/* ------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------- */

@@ -379,10 +379,16 @@ body{
     height: auto;
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------- */
 
 .main .discografia li{
     color: white;
 }
+
+.main .disco{
+    margin-bottom: 30px;
+}
+
 
 .main .frmContacto{
     color: white;
@@ -456,11 +462,12 @@ body{
     border-radius: 5px;
     cursor: pointer;
     margin: 10px auto;
+    transform: matrix(0,1,1,0,0,0);
 }
 
 .botonVolver:hover{
     background-color: black;
-}
+} 
 /* ----------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -473,11 +480,12 @@ body{
 .gridGallery{
     display: grid;
     gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+/*     grid-template-rows: auto auto auto; */
     margin: 0 auto;
     width: 100%;
     margin-bottom: 30px;
+    max-width: 1500px;
 }
 
 .main .gridGallery img{
@@ -490,10 +498,10 @@ height: auto;
     transform: scale(1.25);
     }
  
-@media (max-width: 625px){
+/* @media (max-width: 625px){
     .gridGallery{
     grid-template-columns: 1fr 1fr;
 }
-}   
+}  */  
 
 /* ----------------------------------------------------------------------------------------------------------------------- */

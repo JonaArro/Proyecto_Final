@@ -41,98 +41,143 @@
               </div>
             </div>
           </nav>
-<!--         <nav class="menu">
-            <ul>
-                <li id="videos">
-                    <a href="./videos.html">Videos</a>
-                </li>
-                <li id="fotos">
-                    <a href="./fotos.html">Fotos</a>
-                </li>
-                <li id="informacion">
-                    <a href="./informacion.html">Información</a>
-                </li>
-                <li id="discografia">
-                    <a href="./discografia.html">Discografía</a>
-                </li>
-                <li id="contacto">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav> -->
+
     </header>
 
     <main class="main">
         <h1>Contacto</h1>
-        
+
         <form class="frmContacto" method="" enctype="text/plain">
         
-            <label for="nombre">Nombres</label>
-            <input type="text" id="nombre" placeholder="Ingrese sus nombres" required>
-    
-            <br><br>
+            <div class="row mb-3 containerInfo">
+                <label for="nombre" class="col-sm-2 col-form-label">Nombres</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Ingrese sus Nombres" required>
+                </div>
+            </div>
 
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" placeholder="Ingrese su Apellido" required>
-    
-            <br><br>
+            <div class="row mb-3 containerInfo">
+                <label for="nombre" class="col-sm-2 col-form-label">Apellido</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Ingrese su Apellido" required>
+                </div>
+            </div>
 
-            <label for="telefono">Telefono</label>
-            <input type="number" id="telefono" placeholder="Ingrese su Telefono" required>
+            <div class="row mb-3 containerInfo">
+                <label for="telefono" class="col-sm-2 col-form-label">Teléfono</label>
+                <div class="col-sm-4">
+                    <input type="number" class="form-control form-control-sm" id="telefono" placeholder="Ingrese su Teléfono" required>
+                </div>
+            </div>
+
+            <div class="row mb-3 containerInfo">
+                <label for="mail" class="col-sm-2 col-form-label">Mail</label>
+                <div class="col-sm-7">
+                    <input type="email" class="form-control form-control-sm" id="mail" placeholder="Ingrese su e-Mail" required>
+                </div>
+            </div>
+
+            <fieldset class="row mb-3 containerInfo">
+                <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                    <div class="col-sm-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                            <label class="form-check-label form-label-sm" for="gridRadios1">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label form-label-sm" for="gridRadios2">Femenino</label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label form-label-sm" for="gridRadios3">Otro</label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option3">
+                            <label class="form-check-label form-label-sm" for="gridRadios4">Prefiero No decirlo</label>
+                        </div>
+                    </div>
+            </fieldset>
+
+
+
+
+            <div class="row g-3 align-items-center containerInfo">
+                <div class="col-auto">
+                    <label class="col-form-label" for="paises">País de Residencia:</label>
+                </div> 
+                
+                <div class="col-auto">
+                <select class="form-select form-select-sm" name="paises" id="paises">
+                    <option value="" >Elegir el pais</option>
+                    <option value="01">Argentina</option>
+                    <option value="02">Colombia</option>
+                    <option value="03">Peru</option>
+                    <option value="04">Chile</option>
+                    <option value="05">Mexico</option>
+                    <option value="06">Uruguay</option>
+                    <option value="07">Brasil</option>
+                    <option value="08" disabled>Japon</option>
+                    <option value="09">Otro</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="mb-3 row containerInfo">
+                <label class="form-label" for="contacto">Deje su mensaje:</label>
+                <textarea class="form-control containerInfo" id="contacto" rows="5"></textarea>
+            </div>
     
-            <br><br>
-    
-            <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail" placeholder="Ingrese su mail" required>
-    
-            <br><br>
-    
-            <label for="sexo">Sexo</label>
-            <input type="radio" name="sexo" value="No" id="">Masculino
-            <input type="radio" name="sexo" value="No" id="">Femenino
-            <input type="radio" name="sexo" value="No" id="">Otro
-            <input type="radio" name="sexo" value="No" id="">Prefiero No Decirlo
+            <div class="row g-3 align-items-center containerInfo">
+                <div class="col-auto">
+                    <label class="col-form-label" for="newletter">Deseas Recibir Novedades:</label>
+                </div>
             
-            <br><br>
-
-            <label for="paises">País de Residencia:</label>
-            <select name="paises" id="paises">
-                <option value="" >Elegir el pais</option>
-                <option value="01">Argentina</option>
-                <option value="02">Colombia</option>
-                <option value="03">Peru</option>
-                <option value="04">Chile</option>
-                <option value="05">Mexico</option>
-                <option value="06">Uruguay</option>
-                <option value="07">Brasil</option>
-                <option value="08" disabled>Otro</option>
-            </select>
-    
-            <br><br>
-
-            <label for="contacto">Deje su mensaje</label>
-            <textarea name="" id="contacto" cols="30" rows="10"></textarea>
-    
-            <br><br>
-    
-            <label for="newletter">Deseas Recibir Novedades</label>
-            <input type="radio" name="sexo" value="No" id="">Si
-            <input type="radio" name="sexo" value="No" id="">No
+                <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="No" id="inlineRadio1">
+                        <label class="form-check-label" for="inlineRadio1">Si</label>
+                    </div>
+                </div>
             
-            <br>
+                <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="No" id="inlineRadio2">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div>
+                </div>
+            </div> 
 
-            <label for="frequency">¿Con qué periodicidad?</label>
-            
-            <input type="checkbox" name="casillas" id="" value="">Semanal
-            <input type="checkbox" name="casillas" id="" value="">Quincenal
-            <input type="checkbox" name="casillas" id="" value="">Mensual
-    
-            <br><br>
+            <div class="row g-3 align-items-center containerInfo">
+                <div class="col-auto">
+                    <label class="form-label" for="frequency">¿Con qué periodicidad?</label>
+                </div>
+                <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Semanal</label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Quincenal</label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Mensual</label>
+                    </div>
+                </div>
+            </div>
 
-            <input id="btnEnviar" type="submit" value="Enviar">
-            <input id="btnBorrarTodo" type="reset" value="Borrar todo">
+
+            <input class="botonPageContact" type="submit" value="Enviar">
+            <input class="botonPageContact" type="reset" value="Borrar todo">
         </form>
-        <br><br>
+
+
         <div> 
             <a href="../index.html" class="botonVolver">Volver</a>
         </div>

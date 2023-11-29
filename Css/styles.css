@@ -343,6 +343,9 @@ body{
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------- */
+/* Main Page Información */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
 
 .main .informacionPpal {
     margin-bottom: 50px;
@@ -353,7 +356,7 @@ body{
 .main .parrafo{
     border:1px solid red;
     color: white;
-    background-color: black;
+    background-color: #1b1b1b;
     padding: 5px;
     margin-bottom: 20px;
     margin-left: 5px ; 
@@ -379,7 +382,20 @@ body{
     height: auto;
 }
 
+.main .img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+
 /* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Main Page Discografia */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
 
 .main .discografia li{
     color: white;
@@ -387,17 +403,38 @@ body{
 
 .main .disco{
     margin-bottom: 30px;
+    background-color: #1b1b1b;
 }
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
 
 
 .main .frmContacto{
     color: white;
 }
-.main .frmContacto #btnEnviar,#btnBorrarTodo{
-    color: white;
-    border-radius: 5px;
+
+.main .containerInfo{
+    margin-left: 5px;
+    margin-bottom: 4px;
+    margin-top: 4px; 
+    margin-right: 5px;   
+}
+
+.main .botonPageContact {
     background-color: red;
-    padding: 5px;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    margin-right: 10px ;
+    margin-top: 10px;
+}
+
+.botonPageContact:hover{
+    background-color: black;
 }
 
 
@@ -462,7 +499,6 @@ body{
     border-radius: 5px;
     cursor: pointer;
     margin: 10px auto;
-    transform: matrix(0,1,1,0,0,0);
 }
 
 .botonVolver:hover{

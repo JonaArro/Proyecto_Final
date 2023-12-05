@@ -1,0 +1,452 @@
+/* Variables de color */
+
+$color_1: white;
+$color_2: #fff;
+$font-family_1: sans-serif;
+$font-family_2: "Fira Sans", sans-serif;
+$background-color_1: black;
+$background-color_2: red;
+$background-color_3: #1b1b1b;
+
+@import "https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Nosifer&family=Roboto:wght@400;900&display=swap";
+
+/* Format styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family_1;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Body común a todas las paginas */
+/* ------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+  background-image: url(../img/binding_dark.png);
+  width: auto;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Header común a todas las paginas */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+#header {
+  background-color: $background-color_1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  padding: 10px;
+  width: 100%;
+  gap: 5px;
+  height: auto;
+  overflow: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: $font-family_2;
+  .logo {
+    padding: 10px;
+    width: 200px;
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------- */
+  /* Colores del TooglerBar */
+  /* ----------------------------------------------------------------------------------------------------------------------- */
+
+  .collapse.navbar-collapse.__test {
+    background-color: $background-color_1;
+  }
+  .container-fluid.__fondoToogler2 {
+    background-color: $background-color_1;
+  }
+  .container-fluid {
+    .navbar-toggler.__color {
+      background-color: $background-color_2;
+      border: none;
+      gap: 5px;
+      .navbar-toggler-icon {
+        background-color: $background-color_2;
+      }
+    }
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------- */
+  /* Botones Menu NavBar*/
+  /* ----------------------------------------------------------------------------------------------------------------------- */
+
+  .collapse.navbar-collapse {
+    .navbar-nav.me-auto.mb-2.mb-lg-0.__flexContainer {
+      display: flex;
+      padding-top: 10px;
+      list-style: none;
+      gap: 10px;
+      justify-content: flex-end;
+      align-content: space-around;
+      margin: 0 auto;
+      text-align: center;
+      background-color: $background-color_1;
+    }
+    .navbar-nav.me-auto.mb-2.mb-lg-0 {
+      .nav-item.__navButton {
+        list-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: $background-color_2;
+        padding: 3px 3px;
+        border-radius: 5px;
+        &:hover {
+          background-color: $background-color_1;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Estilos Footer */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 10px auto;
+  color: $color_1;
+  .redes {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Main comun para todas las paginas */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.main {
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 10px auto;
+  font-family: $font-family_2;
+
+  h1 {
+    text-align: center;
+    color: $color_1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 5px;
+  }
+  h3 {
+    color: $color_1;
+    margin-left: 5px;
+  }
+  h2 {
+    color: $color_1;
+    margin-left: 5px;
+  }
+
+  .containerBanda {
+    background-color: $background-color_1;
+    color: $color_1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+    padding: 5px 5px 5px;
+    .integrante {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      background-color: $background-color_3;
+      padding: 10px;
+      gap: 3px;
+      font-size: small;
+    }
+    h3 {
+      margin: 0;
+    }
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 10px 0;
+    }
+    .imgIntegrantes {
+      width: 100%;
+      height: auto;
+    }
+  }
+  #iframeTouTube {
+    padding-bottom: 30px;
+  }
+  .ultimoSingle {
+    padding-top: 30px;
+    width: 100%;
+  }
+  #fechas {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    gap: 10px 10px;
+    background-color: $background-color_1;
+    color: $color_1;
+    overflow: hidden;
+    height: 450px;
+    .grid-item-text {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-left: 1px solid white;
+      transition: transform 0.5s ease;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    .grid-item-image {
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        align-items: center;
+        justify-content: center;
+      }
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.5s ease;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    .grid-item-fechas {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    .grid-item-image.active {
+      transform: translateX(0%);
+    }
+    .grid-item-text.active {
+      transform: translateX(0%);
+    }
+    .grid-item-image.next {
+      transform: translateX(100%);
+    }
+    .grid-item-text.next {
+      transform: translateX(100%);
+    }
+    .grid-item-image.prev {
+      transform: translateX(-100%);
+    }
+    .grid-item-text.prev {
+      transform: translateX(-100%);
+    }
+  }
+  .informacionPpal {
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .parrafo {
+    border: 1px solid red;
+    color: $color_1;
+    background-color: $background-color_3;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .informacionH3 {
+    text-align: left;
+    margin-bottom: 30px;
+    color: $color_1;
+    margin-left: 5px;
+  }
+  .informacionH4 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: $color_1;
+    margin-left: 5px;
+  }
+  .max-width-300 {
+    max-width: 300px;
+    height: auto;
+  }
+  .img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+  }
+  .discografia {
+    li {
+      color: $color_1;
+    }
+  }
+  .disco {
+    margin-bottom: 30px;
+    background-color: $background-color_3;
+  }
+  .frmContacto {
+    color: $color_1;
+  }
+  .containerInfo {
+    margin-left: 5px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-right: 5px;
+  }
+  .botonPageContact {
+    background-color: $background-color_2;
+    color: $color_1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .pageVideos {
+    .videoContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      padding: 10px;
+    }
+  }
+  .gridGallery {
+    img {
+      width: 100%;
+      height: auto;
+      &:hover {
+        filter: none;
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+.botonPageContact {
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.videoSlide {
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  iframe {
+    width: 100%;
+  }
+}
+.botonCarruselSiguiente {
+  background-color: $background-color_2;
+  color: $color_2;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: max-content;
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.botonCarruselAnterior {
+  background-color: $background-color_2;
+  color: $color_2;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: max-content;
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.botonVolver {
+  background-color: $background-color_2;
+  color: $color_1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.gridGallery {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 30px;
+  max-width: 1500px;
+}
+@media (max-width: 625px) {
+  .main {
+    .containerBanda {
+      .integrante {
+        display: none;
+        h3 {
+          display: none;
+        }
+      }
+      .integrante.active {
+        display: grid;
+      }
+    }
+    .integrantesDropdown {
+      font-family: $font-family_1;
+      font-size: 20px;
+      color: $color_1;
+      background-color: $background-color_3;
+      border: 1px solid white;
+      width: auto;
+      padding: 2px;
+      margin-bottom: 3px;
+      &:focus {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 625px) {
+  .main {
+    .dropdown-container {
+      display: none;
+    }
+    .containerBanda {
+      .integrante.active {
+        display: grid;
+      }
+    }
+  }
+}

@@ -105,6 +105,9 @@ body {
         }
       }
     }
+    .colorWord {
+      color: $color_1;
+    }
   }
 }
 
@@ -214,7 +217,7 @@ body {
       display: flex;
       align-items: center;
       padding: 20px;
-      border-left: 1px solid white;
+      border-left: 1px solid $color_1;
       transition: transform 0.5s ease;
       width: 100%;
       max-width: 100%;
@@ -267,7 +270,7 @@ body {
     margin-right: 5px;
   }
   .parrafo {
-    border: 1px solid red;
+    border: 1px solid $background-color_2;
     color: $color_1;
     background-color: $background-color_3;
     padding: 5px;
@@ -428,7 +431,7 @@ body {
       font-size: 20px;
       color: $color_1;
       background-color: $background-color_3;
-      border: 1px solid white;
+      border: 1px solid $color_1;
       width: auto;
       padding: 2px;
       margin-bottom: 3px;

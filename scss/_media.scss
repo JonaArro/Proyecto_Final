@@ -1,0 +1,40 @@
+@media (max-width: 625px) {
+  .main {
+    .containerBanda {
+      .integrante {
+        display: none;
+        h3 {
+          display: none;
+        }
+      }
+      .integrante.active {
+        display: grid;
+      }
+    }
+    .integrantesDropdown {
+      font-family: $font-family_1;
+      font-size: 20px;
+      color: $color_1;
+      background-color: $background-color_3;
+      border: 1px solid $color_1;
+      width: auto;
+      padding: 2px;
+      margin-bottom: 3px;
+      &:focus {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 625px) {
+  .main {
+    .dropdown-container {
+      display: none;
+    }
+    .containerBanda {
+      .integrante.active {
+        display: grid;
+      }
+    }
+  }
+}

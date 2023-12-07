@@ -1,0 +1,21 @@
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Estilos Footer */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 10px auto;
+  color: $color_1;
+  .redes {
+    display: flex;
+    gap: 10px;
+  }
+}

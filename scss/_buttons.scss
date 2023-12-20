@@ -1,0 +1,60 @@
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Botones individuales y creados desde los Script  */
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+.botonPageContact {
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.videoSlide {
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  iframe {
+    width: 100%;
+  }
+}
+.botonCarruselSiguiente {
+  background-color: $background-color_2;
+  color: $color_2;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: max-content;
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.botonCarruselAnterior {
+  background-color: $background-color_2;
+  color: $color_2;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: max-content;
+  &:hover {
+    background-color: $background-color_1;
+  }
+}
+.botonVolver {
+  background-color: $background-color_2;
+  color: $color_1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  &:hover {
+    background-color: $background-color_1;
+  }
+}

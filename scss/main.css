@@ -336,14 +336,9 @@ body {
     display: grid;
   }
 }
-/* Format styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* Botones individuales y creados desde los Script  */
+/* ----------------------------------------------------------------------------------------------------------------------- */
 .botonPageContact:hover {
   background-color: black;
 }
@@ -403,6 +398,14 @@ body {
 }
 .botonVolver:hover {
   background-color: black;
+}
+
+/* Format styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .gridGallery {

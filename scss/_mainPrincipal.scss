@@ -26,6 +26,25 @@
     color: $color_1;
     margin-left: 5px;
   }
+  .autor {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    color: $color_1;
+    height: auto;
+    font-style: normal;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin: 5px auto 20px;
+
+    .nameAutor {
+      font-style: normal;
+      padding-right: 10px;
+      padding-left: 5px;
+      font-style: oblique;
+    }
+  }
 
   .containerBanda {
     background-color: $background-color_1;

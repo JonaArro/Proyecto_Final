@@ -38,6 +38,7 @@ body {
 }
 #header .container-fluid.__fondoToogler2 {
   background-color: black;
+  justify-content: flex-end;
 }
 #header .container-fluid .navbar-toggler.__color {
   background-color: red;
@@ -227,7 +228,8 @@ body {
   margin-right: 5px;
 }
 .main .parrafo {
-  border: 1px solid red;
+  /*     border: 1px solid $background-color_2;
+  */
   color: white;
   background-color: #1b1b1b;
   padding: 5px;

@@ -2,12 +2,14 @@ const images = [
   "./img/fechas01DiciembreTeatroFlores2.jpg",
   "./img/fechas02DiciembreStreaming.png",
   "./img/fechas03-00DivididosCosquinRock2024.jpg",
+  "./img/fechas04-EneroFebrero.jpg",
   "./img/fechas04MarzoSanJuan.png",
 ];
 const texts = [
   "Divididos despide el año con todo en el Teatro Flores.<br> 09/12 - Sabado<br> 10/12 - Domingo<br> 16/12 - Sabado<br> 17/12 - Domingo<br><br>Av. Rivadavia 7806, C1407 CABA<br>Puerta: 19:30Hs<br>Show: 21:00hs",
   "Divididos presenta “Cuerpito Limpio a Brillar, ¡Pogo de Calandrias!”, su primer show streaming. El sábado 19 de diciembre, desde las 21 horas La Aplanadora en un concierto especial al aire libre que podrá verse en Ticketek Live.",
   "Divididos vuelve a Cosquin en donde la grilla tambinen contiene propuestas rockeras, bluseras, de reggae y de otros géneros como cumbia y tango en donde se destacan La Mississippi, Mimi Maura, La Vela Puerca y Los Auténticos Decadentes.",
+  "Divididos volviendo estando Obras. <br> 19/01 - Viernes<br>20/01 - Sabado<br>23/02 - Viernes<br>24/02 - Sabado<br><br>Av. Libertador 7395<br>Puerta: 19:30Hs<br>Show: 20:30hs (Puntual)",
   "Divididos visita nuevamente San Juan esta vez en el Estadio Aldo Cantoni<br>23/03 - Sabado<br><br>C. San Luis Oeste 1300, J5400 San Juan<br>Puerta: 18:30Hs<br>Show: 21:00hs",
 ];
 
